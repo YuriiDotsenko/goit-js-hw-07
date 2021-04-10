@@ -1,33 +1,29 @@
 const ingredients = [
-  'Картошка',
-  'Грибы',
-  'Чеснок',
-  'Помидоры',
-  'Зелень',
-  'Приправы',
+  "Картошка",
+  "Грибы",
+  "Чеснок",
+  "Помидоры",
+  "Зелень",
+  "Приправы",
 ];
+const ingredientsRef = document.querySelector("#ingredients");
 
-const listRef = document.querySelector('#ingredients');
+const firstEl = document.createElement("li");
+firstEl.textContent = "Картошка";
 
-const elementRef = document.createElement('li');
-elementRef.textContent = 'Картошка';
+const twoEl = document.createElement("li");
+twoEl.textContent = "Грибы";
 
-const firstElementRef = document.createElement('li');
-firstElementRef.textContent = 'Грибы';
+const threeEl = document.createElement("li");
+threeEl.textContent = "Чеснок";
 
-const twoElementRef = document.createElement('li');
-twoElementRef.textContent = 'Чеснок';
+const fourEl = document.createElement("li");
+fourEl.textContent = "Помидоры";
 
-const threeElementRef = document.createElement('li');
-threeElementRef.textContent = 'Помидоры';
+const fiveEl = document.createElement("li");
+fiveEl.textContent = "Зелень";
 
-const fourthElementRef = document.createElement('li');
-fourthElementRef.textContent = 'Зелень';
+const sixEl = document.createElement("li");
+sixEl.textContent = "Приправы";
 
-const fifthElementRef = document.createElement('li');
-fifthElementRef.textContent = 'Приправы';
-
-listRef.append(elementRef, firstElementRef, twoElementRef, threeElementRef, fourthElementRef, fifthElementRef);
-
-
-console.log(listRef);
+ingredientsRef.append(firstEl, twoEl, threeEl, fourEl, fiveEl, sixEl);

@@ -1,9 +1,8 @@
 const inputSize = {
-  inputSize: document.querySelector("input#font-size-control"),
-  displayText: document.querySelector("span#text"),
+  input: document.querySelector("#font-size-control"),
+  span: document.querySelector("#text"),
 };
-
 const checkSize = function () {
-  inputSize.displayText.style.fontSize = `${inputSize.inputSize.valueAsNumber}px`;
+  inputSize.span.style.fontSize = `${inputSize.input.value}px`;
 };
-inputSize.inputSize.addEventListener("input", () => checkSize());
+inputSize.input.addEventListener("input", () => checkSize());

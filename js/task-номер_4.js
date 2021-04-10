@@ -1,4 +1,4 @@
-const buttons = {
+const buttonEl = {
   buttonDec: document.querySelector('button[data-action="decrement"]'),
   buttonInc: document.querySelector('button[data-action="increment"]'),
   counterValue: document.querySelector("#value"),
@@ -6,18 +6,18 @@ const buttons = {
 };
 
 const increment = function () {
-  buttons.currentValue += 1;
+  buttonEl.currentValue += 1;
   getValue();
 };
 
 const decrement = function () {
-  buttons.currentValue -= 1;
+  buttonEl.currentValue -= 1;
   getValue();
 };
 
 const getValue = function () {
-  buttons.counterValue.textContent = buttons.currentValue;
+  buttonEl.counterValue.textContent = buttonEl.currentValue;
 };
 
-buttons.buttonInc.addEventListener("click", () => increment());
-buttons.buttonDec.addEventListener("click", () => decrement());
+buttonEl.buttonInc.addEventListener("click", () => increment());
+buttonEl.buttonDec.addEventListener("click", () => decrement());
